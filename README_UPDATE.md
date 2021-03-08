@@ -122,7 +122,7 @@ with(power_days,
           ylab = "Global Active Power (kilowatts)"))
 
 with(power_days, 
-     plot(Time, Voltage, type = "l",xlab = ""))    
+     plot(Time, Voltage, type = "l", xlab = "datetime"))    
 
 plot(power_days$Time, power_days$Sub_metering_1, type = "l", col = "black",
      xlab = "",
@@ -136,7 +136,7 @@ legend("topright",
        cex = 0.7)
 
 with(power_days, 
-     plot(Time, Global_reactive_power, type = "l",xlab = ""))  
+     plot(Time, Global_reactive_power, type = "l", xlab = "datetime"))  
 ```
 
 ![](README_UPDATE_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
